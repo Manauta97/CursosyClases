@@ -17,11 +17,21 @@ public class Main {
 
 		String nombre = "", codigo = "";
 		int horas = 0;
+		
+		
+		switch (opc =  Menu.pintaMenu()) {
+		case 1:
+			
+			break;
+
+		default:
+			break;
+		}
 
 		for (int i = 0; i < 2; i++) {
 			try {
 				Scanner leer = new Scanner(System.in);
-				if (vModulos[i] == null) {
+				if ( == null) {
 					System.out.println("Nombre , horas y código del módulo");
 					nombre = leer.nextLine();
 					Scanner leer1 = new Scanner(System.in);
@@ -36,11 +46,11 @@ public class Main {
 			}
 		} // fin for
 
-		for (Modulo m : vModulos) {
-			if (m != null) {
-				System.out.println(m);
-			}
-		}
+//		for (Modulo m : vModulos) {
+//			if (m != null) {
+//				System.out.println(m);
+//			}
+//		}
 
 	}
 
